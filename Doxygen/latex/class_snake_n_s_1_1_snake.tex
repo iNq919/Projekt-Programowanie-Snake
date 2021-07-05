@@ -1,0 +1,233 @@
+\hypertarget{class_snake_n_s_1_1_snake}{}\doxysection{Snake\+NS.\+Snake Class Reference}
+\label{class_snake_n_s_1_1_snake}\index{SnakeNS.Snake@{SnakeNS.Snake}}
+Inheritance diagram for Snake\+NS.\+Snake\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_snake_n_s_1_1_snake}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_snake_n_s_1_1_snake_af92ac6bdb3be20fcbd0fe9216425fcbc}{Snake}} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor który ma za zadanie utworzenie instancji. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_snake_n_s_1_1_snake_a6404ce26d491ea01f45b9dea2f8b38d0}{move}} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Metoda gameover zostanie wywołana, kiedy wąż opuści teren gry. Metoda collision\+Food jest wywoływana podczas kolizji jedzenia z wężem. Jeżeli metoda collision\+Food zwróci false, wąż zmieni swoje położenie. W metodzie jest sprawdzany jest także czy punkty gracza są wyższe od rekordu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_snake_n_s_1_1_snake_a155cd029e3c04efdfdd612064baa016c}{random\+Food}} ()
+\begin{DoxyCompactList}\small\item\em Metoda w losowym miejscu generuje jedzenie na ekranie. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_snake_n_s_1_1_snake_a965be9a1b85bfd56d19133ff2bfe6928}{hits}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Metoda sprawdza czy nastąpiła kolizja sama z sobą. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_snake_n_s_1_1_snake_ae0c5fd888cca8bd4d898823aea3d50b2}{game\+\_\+over}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Metoda sprawdza czy wąż wyszedł poza obszar gry. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_snake_n_s_1_1_snake_a182ce6d761e1101d014cffe911e3b8fa}{Dispose}} (bool disposing)
+\begin{DoxyCompactList}\small\item\em Wyczyść wszystkie używane zasoby. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_snake_n_s_1_1_snake_a1e2d96fb7eb40d00860f8c73f65d75dd}\label{class_snake_n_s_1_1_snake_a1e2d96fb7eb40d00860f8c73f65d75dd}} 
+bool\mbox{[},\mbox{]} {\bfseries visit}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_snake_n_s_1_1_snake_a23e989d0845d1afb3dd9face37b9b463}{Snake\+\_\+\+Key\+Down}} (object sender, Key\+Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Metoda snake\+\_\+keydown zmienia kierunek toru węża wyznaczoną przez gracza. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_snake_n_s_1_1_snake_ab296145173ff5e4aff8eb7a16356a9c5}{collision\+Food}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Metoda sprawdza czy występuje kolizja z jedzeniem. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_snake_n_s_1_1_snake_ac35afc2675718f695f3fe0bec96f22e2}{initial}} ()
+\begin{DoxyCompactList}\small\item\em Metoda generuje pozycje węża i jedzenia. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_snake_n_s_1_1_snake_a394e5d74704784a9e9e9b9f7ec102c3c}\label{class_snake_n_s_1_1_snake_a394e5d74704784a9e9e9b9f7ec102c3c}} 
+void {\bfseries Snake\+\_\+\+Load} (object sender, Event\+Args e)
+\item 
+void \mbox{\hyperlink{class_snake_n_s_1_1_snake_a2dee0b00f20e46b87c8469eae92c91ea}{Initialize\+Component}} ()
+\begin{DoxyCompactList}\small\item\em Metoda wymagana do obsługi projektanta — nie należy modyfikować jej zawartości w edytorze kodu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_snake_n_s_1_1_snake_a63cc36aae85dd78a5a6ce78af6a07eec}{cols}} = 50
+\begin{DoxyCompactList}\small\item\em Pola klasy i zmienne wykorzystywane w klasie \mbox{\hyperlink{class_snake_n_s_1_1_snake}{Snake}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_snake_n_s_1_1_snake_a2994adc99b6c83b86c5f9493a1cedb93}\label{class_snake_n_s_1_1_snake_a2994adc99b6c83b86c5f9493a1cedb93}} 
+int {\bfseries rows} = 25
+\item 
+\mbox{\Hypertarget{class_snake_n_s_1_1_snake_a7a96dd40ba90ab383335221d5c2bf1a6}\label{class_snake_n_s_1_1_snake_a7a96dd40ba90ab383335221d5c2bf1a6}} 
+int {\bfseries score} = 0
+\item 
+\mbox{\Hypertarget{class_snake_n_s_1_1_snake_abee905ade6718c26ebd2b97fcfd4158f}\label{class_snake_n_s_1_1_snake_abee905ade6718c26ebd2b97fcfd4158f}} 
+int {\bfseries dx} = 0
+\item 
+\mbox{\Hypertarget{class_snake_n_s_1_1_snake_a3eb9779f8e9de5adab631119f4e3f678}\label{class_snake_n_s_1_1_snake_a3eb9779f8e9de5adab631119f4e3f678}} 
+int {\bfseries dy} = 0
+\item 
+\mbox{\Hypertarget{class_snake_n_s_1_1_snake_aff17686a4af8546d6fea74113f3a0dc2}\label{class_snake_n_s_1_1_snake_aff17686a4af8546d6fea74113f3a0dc2}} 
+int {\bfseries front} = 0
+\item 
+\mbox{\Hypertarget{class_snake_n_s_1_1_snake_a86110dbc4b98776f89bf756f1d73780e}\label{class_snake_n_s_1_1_snake_a86110dbc4b98776f89bf756f1d73780e}} 
+int {\bfseries back} = 0
+\item 
+\mbox{\Hypertarget{class_snake_n_s_1_1_snake_a26777a60fa3a222781496ef9e61ba9dc}\label{class_snake_n_s_1_1_snake_a26777a60fa3a222781496ef9e61ba9dc}} 
+\mbox{\hyperlink{class_snake_n_s_1_1_punkt}{Punkt}}\mbox{[}$\,$\mbox{]} {\bfseries snake} = new \mbox{\hyperlink{class_snake_n_s_1_1_punkt}{Punkt}}\mbox{[}1250\mbox{]}
+\item 
+\mbox{\Hypertarget{class_snake_n_s_1_1_snake_adb6189817557b8d5d4a59208cea4eb3e}\label{class_snake_n_s_1_1_snake_adb6189817557b8d5d4a59208cea4eb3e}} 
+List$<$ int $>$ {\bfseries available} = new List$<$int$>$()
+\item 
+\mbox{\Hypertarget{class_snake_n_s_1_1_snake_aa54384fd7efc9c5b1d9312b197c1fb4d}\label{class_snake_n_s_1_1_snake_aa54384fd7efc9c5b1d9312b197c1fb4d}} 
+int {\bfseries high\+Score}
+\item 
+\mbox{\Hypertarget{class_snake_n_s_1_1_snake_ad5af9e6f0ba837b793e0b8bbb30364c5}\label{class_snake_n_s_1_1_snake_ad5af9e6f0ba837b793e0b8bbb30364c5}} 
+Random {\bfseries rand} = new Random()
+\item 
+\mbox{\Hypertarget{class_snake_n_s_1_1_snake_a981ce9ce6d1aa73d80bac76e8552d505}\label{class_snake_n_s_1_1_snake_a981ce9ce6d1aa73d80bac76e8552d505}} 
+Timer {\bfseries timer} = new Timer()
+\item 
+System.\+Component\+Model.\+IContainer \mbox{\hyperlink{class_snake_n_s_1_1_snake_a7376c65408ffe89368cd4fa4d812fd0e}{components}} = null
+\begin{DoxyCompactList}\small\item\em Wymagana zmienna projektanta. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_snake_n_s_1_1_snake_a45971f59a9ce419dd7ba46c8e0801fe8}\label{class_snake_n_s_1_1_snake_a45971f59a9ce419dd7ba46c8e0801fe8}} 
+System.\+Windows.\+Forms.\+Label {\bfseries Wynik}
+\item 
+\mbox{\Hypertarget{class_snake_n_s_1_1_snake_a52afe9d4765f39837ac2487ca877f575}\label{class_snake_n_s_1_1_snake_a52afe9d4765f39837ac2487ca877f575}} 
+System.\+Windows.\+Forms.\+Label {\bfseries Jedzenie}
+\item 
+\mbox{\Hypertarget{class_snake_n_s_1_1_snake_a8804f6774b311fc298d2b617edb2dddb}\label{class_snake_n_s_1_1_snake_a8804f6774b311fc298d2b617edb2dddb}} 
+System.\+Windows.\+Forms.\+Timer {\bfseries timer1}
+\item 
+\mbox{\Hypertarget{class_snake_n_s_1_1_snake_ad8798fa6f4f3871d6f342077ed8911bd}\label{class_snake_n_s_1_1_snake_ad8798fa6f4f3871d6f342077ed8911bd}} 
+System.\+Windows.\+Forms.\+Label {\bfseries txt\+High\+Score}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_snake_n_s_1_1_snake_af92ac6bdb3be20fcbd0fe9216425fcbc}\label{class_snake_n_s_1_1_snake_af92ac6bdb3be20fcbd0fe9216425fcbc}} 
+\index{SnakeNS.Snake@{SnakeNS.Snake}!Snake@{Snake}}
+\index{Snake@{Snake}!SnakeNS.Snake@{SnakeNS.Snake}}
+\doxysubsubsection{\texorpdfstring{Snake()}{Snake()}}
+{\footnotesize\ttfamily Snake\+NS.\+Snake.\+Snake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Konstruktor który ma za zadanie utworzenie instancji. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_snake_n_s_1_1_snake_ab296145173ff5e4aff8eb7a16356a9c5}\label{class_snake_n_s_1_1_snake_ab296145173ff5e4aff8eb7a16356a9c5}} 
+\index{SnakeNS.Snake@{SnakeNS.Snake}!collisionFood@{collisionFood}}
+\index{collisionFood@{collisionFood}!SnakeNS.Snake@{SnakeNS.Snake}}
+\doxysubsubsection{\texorpdfstring{collisionFood()}{collisionFood()}}
+{\footnotesize\ttfamily bool Snake\+NS.\+Snake.\+collision\+Food (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Metoda sprawdza czy występuje kolizja z jedzeniem. 
+
+\mbox{\Hypertarget{class_snake_n_s_1_1_snake_a182ce6d761e1101d014cffe911e3b8fa}\label{class_snake_n_s_1_1_snake_a182ce6d761e1101d014cffe911e3b8fa}} 
+\index{SnakeNS.Snake@{SnakeNS.Snake}!Dispose@{Dispose}}
+\index{Dispose@{Dispose}!SnakeNS.Snake@{SnakeNS.Snake}}
+\doxysubsubsection{\texorpdfstring{Dispose()}{Dispose()}}
+{\footnotesize\ttfamily override void Snake\+NS.\+Snake.\+Dispose (\begin{DoxyParamCaption}\item[{bool}]{disposing }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Wyczyść wszystkie używane zasoby. 
+
+\mbox{\Hypertarget{class_snake_n_s_1_1_snake_ae0c5fd888cca8bd4d898823aea3d50b2}\label{class_snake_n_s_1_1_snake_ae0c5fd888cca8bd4d898823aea3d50b2}} 
+\index{SnakeNS.Snake@{SnakeNS.Snake}!game\_over@{game\_over}}
+\index{game\_over@{game\_over}!SnakeNS.Snake@{SnakeNS.Snake}}
+\doxysubsubsection{\texorpdfstring{game\_over()}{game\_over()}}
+{\footnotesize\ttfamily bool Snake\+NS.\+Snake.\+game\+\_\+over (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Metoda sprawdza czy wąż wyszedł poza obszar gry. 
+
+\mbox{\Hypertarget{class_snake_n_s_1_1_snake_a965be9a1b85bfd56d19133ff2bfe6928}\label{class_snake_n_s_1_1_snake_a965be9a1b85bfd56d19133ff2bfe6928}} 
+\index{SnakeNS.Snake@{SnakeNS.Snake}!hits@{hits}}
+\index{hits@{hits}!SnakeNS.Snake@{SnakeNS.Snake}}
+\doxysubsubsection{\texorpdfstring{hits()}{hits()}}
+{\footnotesize\ttfamily bool Snake\+NS.\+Snake.\+hits (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Metoda sprawdza czy nastąpiła kolizja sama z sobą. 
+
+\mbox{\Hypertarget{class_snake_n_s_1_1_snake_ac35afc2675718f695f3fe0bec96f22e2}\label{class_snake_n_s_1_1_snake_ac35afc2675718f695f3fe0bec96f22e2}} 
+\index{SnakeNS.Snake@{SnakeNS.Snake}!initial@{initial}}
+\index{initial@{initial}!SnakeNS.Snake@{SnakeNS.Snake}}
+\doxysubsubsection{\texorpdfstring{initial()}{initial()}}
+{\footnotesize\ttfamily void Snake\+NS.\+Snake.\+initial (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Metoda generuje pozycje węża i jedzenia. 
+
+\mbox{\Hypertarget{class_snake_n_s_1_1_snake_a2dee0b00f20e46b87c8469eae92c91ea}\label{class_snake_n_s_1_1_snake_a2dee0b00f20e46b87c8469eae92c91ea}} 
+\index{SnakeNS.Snake@{SnakeNS.Snake}!InitializeComponent@{InitializeComponent}}
+\index{InitializeComponent@{InitializeComponent}!SnakeNS.Snake@{SnakeNS.Snake}}
+\doxysubsubsection{\texorpdfstring{InitializeComponent()}{InitializeComponent()}}
+{\footnotesize\ttfamily void Snake\+NS.\+Snake.\+Initialize\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Metoda wymagana do obsługi projektanta — nie należy modyfikować jej zawartości w edytorze kodu. 
+
+\mbox{\Hypertarget{class_snake_n_s_1_1_snake_a6404ce26d491ea01f45b9dea2f8b38d0}\label{class_snake_n_s_1_1_snake_a6404ce26d491ea01f45b9dea2f8b38d0}} 
+\index{SnakeNS.Snake@{SnakeNS.Snake}!move@{move}}
+\index{move@{move}!SnakeNS.Snake@{SnakeNS.Snake}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily void Snake\+NS.\+Snake.\+move (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})}
+
+
+
+Metoda gameover zostanie wywołana, kiedy wąż opuści teren gry. Metoda collision\+Food jest wywoływana podczas kolizji jedzenia z wężem. Jeżeli metoda collision\+Food zwróci false, wąż zmieni swoje położenie. W metodzie jest sprawdzany jest także czy punkty gracza są wyższe od rekordu. 
+
+\mbox{\Hypertarget{class_snake_n_s_1_1_snake_a155cd029e3c04efdfdd612064baa016c}\label{class_snake_n_s_1_1_snake_a155cd029e3c04efdfdd612064baa016c}} 
+\index{SnakeNS.Snake@{SnakeNS.Snake}!randomFood@{randomFood}}
+\index{randomFood@{randomFood}!SnakeNS.Snake@{SnakeNS.Snake}}
+\doxysubsubsection{\texorpdfstring{randomFood()}{randomFood()}}
+{\footnotesize\ttfamily void Snake\+NS.\+Snake.\+random\+Food (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Metoda w losowym miejscu generuje jedzenie na ekranie. 
+
+\mbox{\Hypertarget{class_snake_n_s_1_1_snake_a23e989d0845d1afb3dd9face37b9b463}\label{class_snake_n_s_1_1_snake_a23e989d0845d1afb3dd9face37b9b463}} 
+\index{SnakeNS.Snake@{SnakeNS.Snake}!Snake\_KeyDown@{Snake\_KeyDown}}
+\index{Snake\_KeyDown@{Snake\_KeyDown}!SnakeNS.Snake@{SnakeNS.Snake}}
+\doxysubsubsection{\texorpdfstring{Snake\_KeyDown()}{Snake\_KeyDown()}}
+{\footnotesize\ttfamily void Snake\+NS.\+Snake.\+Snake\+\_\+\+Key\+Down (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Key\+Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Metoda snake\+\_\+keydown zmienia kierunek toru węża wyznaczoną przez gracza. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_snake_n_s_1_1_snake_a63cc36aae85dd78a5a6ce78af6a07eec}\label{class_snake_n_s_1_1_snake_a63cc36aae85dd78a5a6ce78af6a07eec}} 
+\index{SnakeNS.Snake@{SnakeNS.Snake}!cols@{cols}}
+\index{cols@{cols}!SnakeNS.Snake@{SnakeNS.Snake}}
+\doxysubsubsection{\texorpdfstring{cols}{cols}}
+{\footnotesize\ttfamily int Snake\+NS.\+Snake.\+cols = 50\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Pola klasy i zmienne wykorzystywane w klasie \mbox{\hyperlink{class_snake_n_s_1_1_snake}{Snake}}. 
+
+\mbox{\Hypertarget{class_snake_n_s_1_1_snake_a7376c65408ffe89368cd4fa4d812fd0e}\label{class_snake_n_s_1_1_snake_a7376c65408ffe89368cd4fa4d812fd0e}} 
+\index{SnakeNS.Snake@{SnakeNS.Snake}!components@{components}}
+\index{components@{components}!SnakeNS.Snake@{SnakeNS.Snake}}
+\doxysubsubsection{\texorpdfstring{components}{components}}
+{\footnotesize\ttfamily System.\+Component\+Model.\+IContainer Snake\+NS.\+Snake.\+components = null\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Wymagana zmienna projektanta. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Przemek/\+Desktop/\+WSIi\+Z/\+Semestr 3-\/4/\+Projekt/\+Snake Projekt/\+Snake Projekt/Snake.\+cs\item 
+C\+:/\+Users/\+Przemek/\+Desktop/\+WSIi\+Z/\+Semestr 3-\/4/\+Projekt/\+Snake Projekt/\+Snake Projekt/Snake.\+Designer.\+cs\end{DoxyCompactItemize}
